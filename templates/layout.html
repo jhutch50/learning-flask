@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
     <!--Below, we use URL4 to tell Flask to go to the static folder
     and look for the file main.css-->
     <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -13,7 +18,7 @@
         </div>
     </header>
 
-    {% block content %} 
-    {% endblock %}
+    {% block content %} {% endblock %}
 </body>
+
 </html>
